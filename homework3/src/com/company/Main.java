@@ -15,7 +15,7 @@ public class Main {
         Award award2 = new Award(50);
         Nominee nominee2 = new Nominee("Soo2");
         Nominator nominator2 = new Nominator("Chloe2");
-        nominator1.nominate(nominee2, award2);
+        nominator2.nominate(nominee2, award2);
 
 
           }
