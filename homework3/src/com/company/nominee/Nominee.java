@@ -2,6 +2,7 @@ package com.company.nominee;
 
 import com.company.award.Award;
 
+import java.util.List;
 import java.util.Random;
 
 public class Nominee {
@@ -23,7 +24,7 @@ public class Nominee {
     public void receiveAward(Award award) {
         if (award.getSoli() != 1) {
 
-            System.out.println("The original Award amount before SOLI applied is " + award.getValue());
+            System.out.println("The original award amount before SOLI applied is " + award.getValue());
             System.out.println("The soli value is " + award.getSoli());
             double awardWithSoli = award.getValue() * award.getSoli(); //I missed this before!!
             System.out.println("The Award amount with soli is " + awardWithSoli);
@@ -44,7 +45,7 @@ public class Nominee {
                 //population = total count of employee's awards without soli
                 int quantity = ((Z^2*(P)*(1-P))/(c^2)) / (1 + ((((Z^2*(P)*(1-P ))/(c^2))-1)/population));
 
-            System.out.println("The Award amount is " + award.getValue() + " and note that soli is not used.");
+            System.out.println("The original ward amount is " + award.getValue() + " and note that soli is not used.");
             System.out.println("The quantity is " + quantity);
             }
 
@@ -52,4 +53,3 @@ public class Nominee {
 
         }
 
-}
